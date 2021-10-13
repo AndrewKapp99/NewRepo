@@ -871,7 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c425bfa3c96833b43ac0992bb76f3d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: JupiterScene
+  nextScene: TravelBetweenScene1
 --- !u!4 &2038750547
 Transform:
   m_ObjectHideFlags: 0
