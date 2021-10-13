@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class Convo : MonoBehaviour
 {
-    [SerializeField] private Image _ship;
+    [SerializeField] private GameObject _ship;
     [SerializeField] private Image _landing;
     private Vector2 _mousePosition;
     private bool isMoving;
