@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
+using DG.Tweening;
 
 public class InkManager : MonoBehaviour
 {
@@ -13,17 +14,15 @@ public class InkManager : MonoBehaviour
 
     [SerializeField] private VerticalLayoutGroup _layoutGroup;
     [SerializeField] private Button _choiceButtonPrefab;
+    [SerializeField] private Image Astro;
+    [SerializeField] private Image Alien;
+    [SerializeField] private Image DialogueSpace;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public void InitializeConversation(){
         StartStory();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Astro.GetComponent<RectTransform>().transform.DOMove(new Vector3(271f, -133f, 0f), 0.5f);
+        Alien.GetComponent<RectTransform>().transform.DOMove(new Vector3(271f, -133f, 0f), 0.5f);
+        DialogueSpace.GetComponent<RectTransform>().transform.DOMove(new Vector3(271f, -133f, 0f), 0.5f);
     }
 
     public void StartStory(){

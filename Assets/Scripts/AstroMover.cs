@@ -5,9 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class AstroMover : MonoBehaviour
 {
+    [SerializeField] private GameObject Manager;
+    private InkManager DManager;
+    
     public string NextScene;
     private float _mouseXPosition;
     private bool isMoving;
+
+    void Start(){
+        DManager = Manager.GetComponent<InkManager>();
+    }
  
     // Update is called once per frame
     void Update()
@@ -26,6 +33,11 @@ public class AstroMover : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        SceneManager.LoadScene(NextScene);
+        if(other.tag == "Gateway")
+            SceneManager.LoadScene(NextScene);
+        else if(other.tag == "Alien"){
+            Debug.Log("Were doin this scene");
+            DManager.InitializeConversation();
+        }
     }
 }
