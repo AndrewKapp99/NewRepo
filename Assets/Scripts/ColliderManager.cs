@@ -14,7 +14,12 @@ public class ColliderManager : MonoBehaviour
     }
     
     void OnTriggerEnter2D(Collider2D other){
-        Debug.Log("Entered");
-        Manager.GetComponent<TransitionManager>().changeScene();
+        if(other.gameObject.tag == "Gateway")
+            Manager.GetComponent<TransitionManager>().changeScene();
+        else if(other.gameObject.tag == "Alien")
+        {
+            Debug.Log("Were in this.");
+            Manager.GetComponent<InkManager>().InitializeConversation();
+        }
     }
 }

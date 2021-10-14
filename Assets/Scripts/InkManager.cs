@@ -20,9 +20,9 @@ public class InkManager : MonoBehaviour
 
     public void InitializeConversation(){
         StartStory();
-        Astro.GetComponent<RectTransform>().transform.DOMove(new Vector3(271f, -133f, 0f), 0.5f);
-        Alien.GetComponent<RectTransform>().transform.DOMove(new Vector3(271f, -133f, 0f), 0.5f);
-        DialogueSpace.GetComponent<RectTransform>().transform.DOMove(new Vector3(271f, -133f, 0f), 0.5f);
+        Astro.GetComponent<RectTransform>().transform.DOMoveX(-8f, 0.5f, false);
+        Alien.GetComponent<RectTransform>().transform.DOMoveX(8f, 0.5f, false);
+        DialogueSpace.GetComponent<RectTransform>().transform.DOMoveY(4f, 0.5f, false);
     }
 
     public void StartStory(){
