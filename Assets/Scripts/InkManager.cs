@@ -18,6 +18,8 @@ public class InkManager : MonoBehaviour
     [SerializeField] private Image Alien;
     [SerializeField] private Image DialogueSpace;
 
+    public bool isTalking;
+
     public void InitializeConversation(){
         StartStory();
         Astro.GetComponent<RectTransform>().transform.DOMoveX(-8f, 0.5f, false);
@@ -27,6 +29,7 @@ public class InkManager : MonoBehaviour
 
     public void StartStory(){
         _story = new Story(_inkJsonAsset.text);
+        isTalking = true;
         DisplayNextLine();
     }
 
