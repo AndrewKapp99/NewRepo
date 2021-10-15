@@ -8,11 +8,12 @@ public class Convo : MonoBehaviour
 {
     [SerializeField] private GameObject _ship;
     [SerializeField] private Image _landing;
+    [SerializeField] private GameObject DManager;
     private Vector2 _mousePosition;
     private bool isMoving;
 
     void Update(){
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !DManager.GetComponent<InkManager>().isTalking)
         {
             _mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             isMoving = true;

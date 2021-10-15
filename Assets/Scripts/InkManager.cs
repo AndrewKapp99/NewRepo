@@ -100,6 +100,7 @@ public class InkManager : MonoBehaviour
         Astro?.GetComponent<RectTransform>().transform.DOMoveX(-16f, 0.5f, false);
         Alien?.GetComponent<RectTransform>().transform.DOMoveX(16f, 0.5f, false);
         DialogueSpace.GetComponent<RectTransform>().transform.DOMoveY(8f, 0.5f, false);
+        isTalking = false;
     }
 
     public void OnClick()
