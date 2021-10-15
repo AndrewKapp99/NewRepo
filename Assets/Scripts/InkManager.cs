@@ -22,8 +22,8 @@ public class InkManager : MonoBehaviour
 
     public void InitializeConversation(){
         StartStory();
-        Astro.GetComponent<RectTransform>().transform.DOMoveX(-8f, 0.5f, false);
-        Alien.GetComponent<RectTransform>().transform.DOMoveX(8f, 0.5f, false);
+        Astro?.GetComponent<RectTransform>().transform.DOMoveX(-8f, 0.5f, false);
+        Alien?.GetComponent<RectTransform>().transform.DOMoveX(8f, 0.5f, false);
         DialogueSpace.GetComponent<RectTransform>().transform.DOMoveY(4f, 0.5f, false);
     }
 
@@ -46,6 +46,8 @@ public class InkManager : MonoBehaviour
         {
             DisplayChoices();
         }
+        else if (!_story.canContinue)
+            closeConvo();
     }
 
     private void DisplayChoices(){
@@ -91,6 +93,13 @@ public class InkManager : MonoBehaviour
                 Destroy(button.gameObject);
             }
         }
+    }
+
+    private void closeConvo()
+    {
+        Astro?.GetComponent<RectTransform>().transform.DOMoveX(-16f, 0.5f, false);
+        Alien?.GetComponent<RectTransform>().transform.DOMoveX(16f, 0.5f, false);
+        DialogueSpace.GetComponent<RectTransform>().transform.DOMoveY(8f, 0.5f, false);
     }
 
     public void OnClick()

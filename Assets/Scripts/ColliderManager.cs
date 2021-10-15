@@ -6,11 +6,12 @@ public class ColliderManager : MonoBehaviour
 {
     public GameObject transitionZone;
     public GameObject Manager;
+    public GameObject ConvoManager;
     
     private BoxCollider2D transition;
 
     void Start(){
-        //transition = transitionZone.GetComponent<BoxCollider2D>();
+        ConvoManager.GetComponent<InkManager>().InitializeConversation();
     }
     
     void OnTriggerEnter2D(Collider2D other){
