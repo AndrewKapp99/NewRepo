@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TravelBetweenScene1.unity
     guid: 6899158e070f5044394706726cabb286
+  - enabled: 1
+    path: Assets/Scenes/TravelBetweenScene2.unity
+    guid: 75fbad689fed1b44bafe23ec01063014
   m_configObjects: {}

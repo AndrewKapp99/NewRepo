@@ -244,6 +244,14 @@ PrefabInstance:
       propertyPath: SceneGate
       value: TravelBetweenScene1
       objectReference: {fileID: 0}
+    - target: {fileID: 3583227845580725671, guid: 61b43ccd750f2fe498264c9bb34b3df4, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0333147
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583227845580725671, guid: 61b43ccd750f2fe498264c9bb34b3df4, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.5166574
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b43ccd750f2fe498264c9bb34b3df4, type: 3}
 --- !u!1 &217553215 stripped
