@@ -1,8 +1,6 @@
 ->Jupe
 
 ==Jupe==
-Radar: Incoming planet - Jupe. Population: 40 Million. Home to Galacton species. Producers of Mega Seeds.
-Astronaut: We need those seeds. Take us in for a closer look.
 Astronaut: Greetings.
 JupeNupe: Greetings, Earthling, I am JupeNupe. I was informed by our JupeTroops that your ship was approaching. What is your reason for this visit?
 Astronaut: My home planet is slowly dying and I need to retrieve a large quanity of your Mega Seeds. I will find a way to repay you for your assistance.
