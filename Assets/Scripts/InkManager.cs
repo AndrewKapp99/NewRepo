@@ -17,6 +17,7 @@ public class InkManager : MonoBehaviour
     [SerializeField] private Image Astro;
     [SerializeField] private Image Alien;
     [SerializeField] private Image DialogueSpace;
+    public Player playerData;
 
     public bool isTalking;
 

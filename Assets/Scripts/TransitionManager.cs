@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TransitionManager : MonoBehaviour
 {
-    public string nextScene;
 
-    public void changeScene(){
+    public void changeScene(string nextScene){
         
         SceneManager.LoadScene(nextScene);
     }

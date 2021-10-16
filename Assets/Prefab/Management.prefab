@@ -89,6 +89,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ship: {fileID: 0}
   _landing: {fileID: 0}
+  DManager: {fileID: 0}
 --- !u!1 &7297546742985414372
 GameObject:
   m_ObjectHideFlags: 0

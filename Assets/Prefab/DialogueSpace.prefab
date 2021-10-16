@@ -233,6 +233,11 @@ MonoBehaviour:
   _dialogueField: {fileID: 7074790890092256470}
   _layoutGroup: {fileID: 7074790890129202031}
   _choiceButtonPrefab: {fileID: 1946059950989544080, guid: 1c701d94f48c47b40a1e12b57b6b4153, type: 3}
+  Astro: {fileID: 0}
+  Alien: {fileID: 0}
+  DialogueSpace: {fileID: 0}
+  playerData: {fileID: 11400000, guid: dfb9871cdc608f34da42c87cd8e023df, type: 2}
+  isTalking: 0
 --- !u!1 &7074790891565939080
 GameObject:
   m_ObjectHideFlags: 0
