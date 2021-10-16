@@ -179,7 +179,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7074790891565938806, guid: 5b2bd166b0f6a9741849b3a00281b5fb, type: 3}
   m_PrefabInstance: {fileID: 878850399}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821311750}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -831,11 +831,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &1821311750 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7074790891565939080, guid: 5b2bd166b0f6a9741849b3a00281b5fb, type: 3}
-  m_PrefabInstance: {fileID: 878850399}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1907041232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -850,7 +845,7 @@ PrefabInstance:
     - target: {fileID: 2717369345501919329, guid: 9d1f834fb3e11f546811817698e26409, type: 3}
       propertyPath: DManager
       value: 
-      objectReference: {fileID: 1821311750}
+      objectReference: {fileID: 2049034722}
     - target: {fileID: 4032632997978700467, guid: 9d1f834fb3e11f546811817698e26409, type: 3}
       propertyPath: m_RootOrder
       value: 6
