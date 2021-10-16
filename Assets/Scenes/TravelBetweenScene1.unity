@@ -590,6 +590,7 @@ GameObject:
   - component: {fileID: 1803278028}
   - component: {fileID: 1803278030}
   - component: {fileID: 1803278031}
+  - component: {fileID: 1803278032}
   m_Layer: 0
   m_Name: JUPITER
   m_TagString: Gateway
@@ -689,6 +690,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -30.710632}
   serializedVersion: 2
   m_Radius: 258.91547
+--- !u!114 &1803278032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803278026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b98dd678f13064f89e262548d4ddc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneGate: JupiterScene
 --- !u!1001 &2079573524
 PrefabInstance:
   m_ObjectHideFlags: 0
