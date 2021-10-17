@@ -11,13 +11,6 @@ public class ColliderManager : MonoBehaviour
     private BoxCollider2D transition;
     private string nextScene;
     void Start(){
-        if(ConvoManager.GetComponent<InkManager>().playerData.lastSceneName == "EarthScene"){
-            GetComponent<Transform>().localPosition = new Vector2(-7.51f, -2.45f);
-        }
-        else if(ConvoManager.GetComponent<InkManager>().playerData.lastSceneName == "JupiterScene")
-            GetComponent<Transform>().localPosition = new Vector2(3.08f, -2.45f);
-
-
         ConvoManager.GetComponent<InkManager>().InitializeConversation();
     }
     
