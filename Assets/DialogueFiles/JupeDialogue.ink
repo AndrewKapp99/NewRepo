@@ -1,3 +1,4 @@
+VAR resource = "seeds"
 ->Jupe
 
 ==Jupe==

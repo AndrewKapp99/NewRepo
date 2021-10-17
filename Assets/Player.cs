@@ -7,4 +7,5 @@ public class Player : ScriptableObject
 {
     public string lastSceneName;
     public bool hasSeeds;
+    public bool hasWater;
 }

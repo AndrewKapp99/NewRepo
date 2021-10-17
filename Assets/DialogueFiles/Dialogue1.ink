@@ -1,3 +1,4 @@
+VAR resource = "none"
 -> Introduction
 
 ==Introduction==

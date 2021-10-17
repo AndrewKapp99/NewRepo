@@ -17,9 +17,21 @@ public class InkManager : MonoBehaviour
     [SerializeField] private Image Astro;
     [SerializeField] private Image Alien;
     [SerializeField] private Image DialogueSpace;
+    [SerializeField] private GameObject SeedSpace, WaterSpace;
     public Player playerData;
 
     public bool isTalking;
+
+    public int choiceCount;
+
+    private string resource;
+
+    void Start(){
+        if (playerData.hasSeeds)
+            SeedSpace.SetActive(true);
+        if (playerData.hasWater)
+            WaterSpace.SetActive(true);
+    }
 
     public void InitializeConversation(){
         StartStory();
@@ -30,6 +42,7 @@ public class InkManager : MonoBehaviour
 
     public void StartStory(){
         _story = new Story(_inkJsonAsset.text);
+        resource = (string)_story.variablesState["resource"];
         isTalking = true;
         DisplayNextLine();
     }
@@ -46,6 +59,7 @@ public class InkManager : MonoBehaviour
         else if (_story.currentChoices.Count > 0)
         {
             DisplayChoices();
+            choiceCount++;
         }
         else if (!_story.canContinue)
             closeConvo();
@@ -101,6 +115,22 @@ public class InkManager : MonoBehaviour
         Astro?.GetComponent<RectTransform>().transform.DOMoveX(-16f, 0.5f, false);
         Alien?.GetComponent<RectTransform>().transform.DOMoveX(16f, 0.5f, false);
         DialogueSpace.GetComponent<RectTransform>().transform.DOMoveY(8f, 0.5f, false);
+
+        if(choiceCount>1)
+        {
+            if(resource == "water")
+            {
+                playerData.hasWater = true;
+            }
+                
+            if(resource == "seeds")
+            {
+                playerData.hasSeeds = true;
+            }
+        }
+            
+                
+
         isTalking = false;
     }
 

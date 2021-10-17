@@ -1,8 +1,8 @@
+VAR resource = "water"
+
 ->Nepto
 
 ==Nepto==
-Radar: “Incoming Planet – NEPTO. Home to 10 million Neptonians and houses 50 tanks of the freshest water. We need to get our hands on such amounts to get the seed farm growing. Let’s land and look around.”
-Astronaut: "Take us in."
 AstroNaut: “Greetings”
 NeptKing: “Greetings Earthling, I am NeptKing, the leader of this great planet. I was informed by the Neptunians that you were landing near on this great surface. Why do you seek us?”
 AstroNaut: “My planet is deprived of water; I need to somehow gain some from you. At what cost does it come?”
