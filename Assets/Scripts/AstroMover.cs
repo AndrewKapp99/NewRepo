@@ -11,9 +11,11 @@ public class AstroMover : MonoBehaviour
     public string NextScene;
     private float _mouseXPosition;
     private bool isMoving;
+    private Vector2 currentPos;
 
     void Start(){
         DManager = Manager.GetComponent<InkManager>();
+        currentPos = (Vector2)GetComponent<Transform>().position;
     }
  
     // Update is called once per frame
@@ -22,12 +24,15 @@ public class AstroMover : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && DManager.isTalking == false)
         {
             _mouseXPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
+            Debug.Log(_mouseXPosition);
             isMoving = true;
         }
 
-        if(isMoving && this.transform.position.x != _mouseXPosition)
+        if(isMoving && GetComponent<Transform>().position.x != _mouseXPosition)
         {
-            this.transform.position = new Vector2(Mathf.Lerp(this.transform.position.x, _mouseXPosition, 0.001f), this.transform.position.y);
+            float step = 10f*Time.deltaTime;
+            Debug.Log(currentPos.x);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(_mouseXPosition, currentPos.y), step);
         } else
             isMoving = false;
     }
