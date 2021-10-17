@@ -25,6 +25,7 @@ public class InkManager : MonoBehaviour
     public int choiceCount;
 
     private string resource;
+    private bool correct;
 
     void Start(){
         if (playerData.hasSeeds)
@@ -43,6 +44,9 @@ public class InkManager : MonoBehaviour
     public void StartStory(){
         _story = new Story(_inkJsonAsset.text);
         resource = (string)_story.variablesState["resource"];
+        if(resource == "Pirate"){{
+            correct = (bool)_story.variablesState["correct"];
+        }}
         isTalking = true;
         DisplayNextLine();
     }
@@ -127,10 +131,19 @@ public class InkManager : MonoBehaviour
             {
                 playerData.hasSeeds = true;
             }
+
+            
+        }
+
+        if(resource == "Pirate")
+        {
+            if(!correct)
+            {
+                playerData.hasSeeds = false;
+                playerData.hasWater = false;
+            }
         }
             
-                
-
         isTalking = false;
     }
 

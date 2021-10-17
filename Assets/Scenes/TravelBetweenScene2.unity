@@ -465,7 +465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3583227845580725669, guid: 61b43ccd750f2fe498264c9bb34b3df4, type: 3}
       propertyPath: SceneGate
-      value: PirateScene
+      value: PirateEncounter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b43ccd750f2fe498264c9bb34b3df4, type: 3}
@@ -586,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1310813604117112297, guid: 9dad15215c47b7244936321239efd41a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.19
+      value: -6.46
       objectReference: {fileID: 0}
     - target: {fileID: 1310813604117112297, guid: 9dad15215c47b7244936321239efd41a, type: 3}
       propertyPath: m_LocalPosition.y

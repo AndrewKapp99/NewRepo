@@ -1,4 +1,5 @@
 VAR resource = "Pirate"
+VAR correct = false
 
 Gasto: I am Gasto, a plague on this sector where you have wondered in. In order to pass, I require you pay me homage or play a little game of riddles with me.
 AstroNaut: Well, we can't lose our cargo. We need it for our homeplanet.
